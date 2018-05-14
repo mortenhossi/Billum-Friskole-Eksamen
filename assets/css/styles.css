@@ -53,8 +53,12 @@ a {
   cursor: pointer;
 }
 
+.dropdown {
+  margin-top: -29px;
+}
+
 .dropbutton {
-  width: 200px;
+  width: 150px;
   background: #ffffff;
   color: #205A79;
   height: 75px;
