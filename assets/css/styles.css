@@ -14,21 +14,73 @@ footer {
   background: #205A79;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* NAVIGATION STYLES
 ************************************* */
+.billumimg {
+  width: 300px;
+}
 
+.tilmeldnav {
+  color: white;
+  background: #205A79;
+  border-style: none;
+  cursor: pointer;
+}
 
+.dropbutton {
+  width: 200px;
+  background: white;
+  color: #205A79;
+  height: 75px;
+  border-style: none;
+  list-style-type: none;
+  cursor: pointer;
+}
 
+.dropdown > ul {
+  background: #ffffff;
+  color: #205A79;
+  display: flex;
+  font-size: 40px;
+}
 
+.dropdown > ul > li {
+  display: inline-block;
+  flex: 1;
+  list-style-type: none;
+  text-align: center;
+  position: relative;
+  padding: 7px 25px;
+}
 
+.dropdown > ul > li:hover {
+  background-color: #ffffff;
+}
 
+ul.dropmenu {
+  position: absolute;
+  background-color: #000000;
+  list-style-type: none;
+  width: 328px;
+  margin-top: 7px;
+  margin-left: -25px;
+  padding-left: 0px;
+  opacity: 0;
+}
 
+ul.dropmenu > li:hover {
+  color: #205A79;
+  background-color: #123456;
+}
 
-
-
-
-
-
+.dropdown li:hover .dropmenu {
+  opacity: 1;
+}
 
 
 /* TILMELD DIT BARN
