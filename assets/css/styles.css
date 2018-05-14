@@ -6,5 +6,55 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+h2 {
+  color: #205A79;
+}
+
+footer {
+  background: #205A79;
+}
+
 /* NAVIGATION STYLES
 ************************************* */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TILMELD DIT BARN
+************************************* */
+.tilmelding {
+
+}
+
+.tilmeld {
+  background-color: #BF4C2B;
+  color: white;
+  border-style: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.kontakt {
+  background-color: #BF4C2B;
+  color: white;
+  border-style: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.twobuttons {
+  display: block;
+}
