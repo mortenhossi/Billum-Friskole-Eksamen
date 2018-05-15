@@ -151,11 +151,40 @@ ul.dropmenu > li:hover {
 
 
 
-/* PICTURE TITLE
+/* SFO og børnehave
 ************************************* */
+.containersfo {
+  width: 100%;
+  display: flex;
+}
+
+.sfohave {
+  margin-left: 20px;
+  flex: 4;
+}
+
+.sfohave p {
+  margin-right: 25%;
+}
+
+.sfobilleder {
+  flex: 2;
+  margin-top: 150px;
+  margin-right: 20px;
+}
 
 
+.side-billede1 {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
 
+.side-billede2 {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
 
 
 
@@ -363,7 +392,7 @@ ul.dropmenu > li:hover {
 .nyheder-box a {
   display: block;
   margin: 0;
-  padding: 5px 0;
+  padding: 10px 0;
   width: 200px;
 }
 
