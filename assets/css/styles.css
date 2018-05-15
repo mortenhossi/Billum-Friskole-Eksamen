@@ -255,6 +255,69 @@ ul.dropmenu > li:hover {
   background-image: url("../../assets/images/priserBillede.png");
 }
 
+.priser-sektion h2, .priser-sektion p {
+  text-align: center;
+}
+
+.priser-sektion table {
+  margin: auto;
+  text-align: center;
+}
+
+.priser-sektion table td, .priser-sektion table th {
+  padding: 10px 20px;
+  color: #BF4C2B;
+}
+
+.priser-sektion a {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+
+
+/* NYHEDER STYLES
+************************************* */
+.nyhederURL {
+  background-image: url("../../assets/images/nyhederBillede.png");
+}
+
+.nyheder-sektion h2 {
+  text-align: center;
+}
+
+.nyheder-box img {
+  width: 200px;
+  height: 100px;
+  display: block;
+}
+
+.nyheder-box {
+  width: 200px;
+}
+
+.nyheder-information p {
+  background: white;
+  margin: 0;
+  padding: 10px 10px;
+  text-align: center;
+  height: 110px;
+}
+
+.nyheder-box a {
+  display: block;
+  margin: 0;
+  padding: 5px 0;
+  width: 200px;
+}
+
+.nyheder-container {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin: auto;
+}
+
 /* FOOTER STYLES
 ************************************* */
 footer {
