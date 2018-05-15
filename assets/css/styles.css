@@ -26,6 +26,7 @@ h1 {
 
 h2 {
   color: #205A79;
+  margin-top: 50px;
 }
 
 footer {
@@ -186,24 +187,16 @@ ul.dropmenu > li:hover {
 }
 
 
-.side-billede1 {
-  width: 100px;
-  height: 100px;
-  display: block;
-}
-
 .side-billede2 {
-  width: 100px;
-  height: 100px;
+  margin-bottom
+  width: 350px;
+  height: 300px;
   display: block;
 }
 
-
-
-
-
-
-
+.sfohaveURL {
+  background-image: url("../../assets/images/SFOBørnehave.png");
+}
 
 
 
@@ -251,6 +244,11 @@ ul.dropmenu > li:hover {
 .ogp {
   margin-left: 25%;
 }
+
+.omskolenURL {
+  background-image: url("../../assets/images/omskolen.png");
+}
+
 /* KONTAKT STYLES
 ************************************* */
 .kontaktURL {
@@ -415,8 +413,50 @@ ul.dropmenu > li:hover {
   margin: auto;
 }
 
-/* galleri DIT BARN STYLES
+/* galleri STYLES
 ************************************* */
+.galleriURL {
+  background-image: url("../../assets/images/galleriBillede.png");
+}
+
+.galleri-sektion h2 {
+  text-align: center;
+}
+
+.billeder {
+  display: flex;
+  flex-wrap: wrap;
+  width: 880px;
+  margin: auto;
+}
+
+.galleri-sektion img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+/* VÆRDIGRUNDLAG STYLES
+************************************* */
+.værdierURL {
+  background-image: url("../../assets/images/vaerdigrundlagBillede.png");
+}
+
+.værdier-sektion h2 {
+  margin-left: 20px;
+}
+
+.værdier-sektion ul {
+    background-color: #BF4C2B;
+    width: 80%;
+    margin-left: 20px;
+}
+
+.værdier-sektion li {
+  padding: 10px;
+  color: white;
+}
+
 
 /* FOOTER STYLES
 ************************************* */
