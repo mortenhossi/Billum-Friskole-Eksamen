@@ -10,34 +10,43 @@
   </head>
   <body>
 
-    <nav class="dropdown">
-      <ul>
-      <img src="assets/images/billumlogo.png" class="billumimg" alt="Billum Friskole logo">
-          <li><a href="#" class="dropbutton">Information</a>
-            <ul class="dropmenu">
-              <li><a href="#">Om skolen</a></li>
-              <li><a href="#">SFO</a></li>
-              <li><a href="#">Børnehave</a></li>
-            </ul>
-          </li>
-          <li><a href="#" class="dropbutton">Praktisk</a>
-            <ul class="dropmenu">
-              <li><a href="#">Priser</a></li>
-              <li><a href="#">Værdigrundlag</a></li>
-              <li><a href="#">Vedtægter</a></li>
-              <li><a href="#">Undervisningsplaner</a></li>
-              <li><a href="#">Certificeret Tilsynsførende</a></li>
-            </ul>
-          </li>
-          <li><a href="#" class="dropbutton">Nyheder</a>
-            <ul class="dropmenu">
-              <li><a href="#">Seneste</a></li>
-              <li><a href="#">Galleri</a></li>
-            </ul>
-          </li>
-          <li><a href="#" class="dropbutton">Kontakt</a></li>
-          <li><a href="#" class="tilmeldnav">Tilmeld</a></li>
-       </ul>
+    <nav>
+      <div class="billede-container">
+        <a href="index.html"><img src="assets/images/billumlogo.png" class="billumimg" alt="Billum Friskole logo"></a>
+      </div>
+
+      <div class="links-container">
+        <div class="dropdown">
+          <button class="dropbtn">Information</button>
+            <div class="dropdown-content">
+              <a href="omskolen.html">Om skolen</a>
+              <a href="sfobørnehave.html">SFO/Børnehave</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Praktisk</button>
+            <div class="dropdown-content">
+              <a href="priser.html">Priser</a>
+              <a href="vaerdigrundlag.html">Værdigrundlag</a>
+              <a href="vedtaegter.html">Vedtægter</a>
+              <a href="#">Undervisningsplaner</a>
+              <a href="#">Certificeret tilsynsførende</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Nyheder</button>
+            <div class="dropdown-content">
+              <a href="seneste.html">Seneste</a>
+              <a href="galleri.html">Galleri</a>
+            </div>
+        </div>
+
+        <a href="kontakt.html" class="dropbtn">Kontakt</a>
+
+        <a href="tilmeld.html" class="dropbtn tilmeldbtn">Tilmeld</a>
+      </div>
     </nav>
 
       <header>
@@ -57,8 +66,8 @@
 
     <aside class="twobuttons">
     <div class="flexmargin">
-      <button type="button" class="tilmeld">Tilmeld</button> <br>
-      <button type="button" class="kontakt">Kontakt</button>
+      <a href="tilmeld.html" class="button tilmeldbtns">Tilmeld</a>
+      <a href="kontakt.html" class="button tilmeldbtns">Kontakt</a>
     </div>
     </aside>
    </main>
@@ -72,7 +81,7 @@
       </div>
 
       <div class="intranet-footer">
-        <h3>intranet</h3>
+        <h3>Intranet</h3>
         <a href="https://billumfriskole.viggo.dk/" class="button" target="_blank">Log ind</a>
       </div>
 
