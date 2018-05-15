@@ -13,7 +13,6 @@ h1 {
 }
 
 .billede-overlay {
-  background-image: url("../../assets/images/kontaktBillede.png");
   background-size: contain;
   width: 100vw;
   height: 22.5vw;
@@ -36,6 +35,14 @@ footer {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.hero-headline {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
 }
 
 /* NAVIGATION STYLES
@@ -142,13 +149,13 @@ ul.dropmenu > li:hover {
 
 /* KONTAKT STYLES
 ************************************* */
+.kontaktURL {
+  background-image: url("../../assets/images/kontaktBillede.png");
+}
 
-.kontakt-headline {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: white;
+.kontakt-form {
+  width: 80%;
+  margin: auto;
 }
 
 .kontakt-form h2 {
@@ -165,14 +172,14 @@ ul.dropmenu > li:hover {
 }
 
 .kontakt-form form input {
-  width: 20%;
+  width: 30%;
   border: 1px solid #BF4C2B;
   padding: 5px;
   margin-top: 5px;
 }
 
 .kontakt-form form textarea {
-  width: 30%;
+  width: 50%;
   resize: vertical;
   border: 1px solid #BF4C2B;
   margin-top: 5px;
@@ -193,9 +200,52 @@ ul.dropmenu > li:hover {
   flex: 1;
   border: 1px solid #BF4C2B;
   margin-right: 20px;
-  height: 150px;
   padding: 10px 15px;
   background: white;
+}
+
+/* ANSATTE STYLES
+************************************* */
+
+.ansatte {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ansatte-sektion h2 {
+  text-align: center;
+}
+
+.ansat-box img {
+  border-radius: 50%;
+  width: 200px;
+  height: 198px;
+  margin: 0px 50px;
+}
+
+.ansatteURL {
+  background-image: url("../../assets/images/ansatteBillede.png");
+}
+
+.ansat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ansat-information h3 {
+  margin-bottom: 0;
+}
+
+.ansat-information p {
+  margin-top: 0;
+}
+
+/* PRISER STYLES
+************************************* */
+.priserURL {
+  background-image: url("../../assets/images/priserBillede.png");
 }
 
 /* FOOTER STYLES
