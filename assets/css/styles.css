@@ -479,3 +479,77 @@ footer {
 .kontakt-footer {
   margin-left: 20px;
 }
+
+/* INDEX STYLES
+************************************* */
+.indexURL {
+  background-image: url("../../assets/images/indexBillede.png");
+}
+
+.friskolentext {
+  text-align: center;
+}
+
+.marginfirs {
+  width: 80%;
+  margin: auto;
+}
+
+.fleximg {
+  display: flex;
+}
+
+.fleximg img {
+  width: 300px;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+}
+
+.valueboxes {
+  display: flex;
+  padding: 20px;
+}
+
+.value {
+  flex: 1;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.valueboxes h2 {
+  color: #BF4C2B;
+}
+
+.value p {
+  color: #ffffff;
+  background: #BF4C2B;
+  padding: 10px;
+  width: 200px;
+  height: 150px;
+  margin: auto;
+}
+
+.sfobh {
+  display: flex;
+}
+
+.overskriftbh {
+  margin-top: 60px;
+}
+
+.billedersfobh img {
+  width: 175px;
+  padding: 20px;
+}
+
+.tekstsfobh {
+  flex: 4;
+  margin-right: 40px;
+}
+
+.billedersfobh {
+  flex: 1;
+}
