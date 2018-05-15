@@ -171,23 +171,22 @@ ul.dropmenu > li:hover {
 
 
 .side-billede1 {
-  width: 100px;
-  height: 100px;
+  margin-bottom: 20px;
+  width: 200px;
+  height: 300px;
   display: block;
 }
 
 .side-billede2 {
-  width: 100px;
-  height: 100px;
+  margin-bottom
+  width: 350px;
+  height: 300px;
   display: block;
 }
 
-
-
-
-
-
-
+.sfohaveURL {
+  background-image: url("../../assets/images/SFOBørnehave.png");
+}
 
 
 
@@ -235,6 +234,11 @@ ul.dropmenu > li:hover {
 .ogp {
   margin-left: 25%;
 }
+
+.omskolenURL {
+  background-image: url("../../assets/images/omskolen.png");
+}
+
 /* KONTAKT STYLES
 ************************************* */
 .kontaktURL {
