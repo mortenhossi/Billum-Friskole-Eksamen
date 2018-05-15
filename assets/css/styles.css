@@ -60,3 +60,60 @@ footer {
 .twobuttons {
   display: block;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Om skolen
+************************************* */
+.containeromskolen {
+  width: 100%;
+  display: flex;
+}
+
+.mainschool {
+  display: flex;
+}
+
+.flexbox {
+  margin-left: 20px;
+  flex: 4;
+}
+
+
+.side-billede {
+  margin-top: 150px;
+  margin-right: 20px;
+  flex: 2;
+}
+
+.flexbox p {
+  margin-right: 25%;
+}
+
+
+.skolebillede {
+   width: 400px;
+   height: 250px;
+}
+
+.orangetextbox {
+  margin-right: 40%;
+  padding: 10px;
+  color: white;
+  background-color: #BF4C2B;
+  text-align: center;
+}
+
+.ogp {
+  margin-left: 25%;
+}
