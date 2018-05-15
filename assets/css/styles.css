@@ -123,6 +123,10 @@ ul.dropmenu > li:hover {
 
 }
 
+.tilmeldURL {
+  background-image: url("../../assets/images/tilmeldBillede.png");
+}
+
 .tilmeld {
   background: #BF4C2B;
   color: white;
