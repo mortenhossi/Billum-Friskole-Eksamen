@@ -113,11 +113,10 @@ ul.dropmenu > li:hover {
 
 .dropdown li:hover .dropmenu {
   display: block;
-  z-index: 1;
 }
 
 
-/* TILMELD DIT BARN STYLES
+/* TILMELD DIT BARN
 ************************************* */
 .tilmelding {
 
