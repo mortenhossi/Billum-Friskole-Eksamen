@@ -121,9 +121,6 @@ ul.dropmenu > li:hover {
 
 /* TILMELD DIT BARN STYLES
 ************************************* */
-.tilmelding {
-
-}
 
 .tilmeldURL {
   background-image: url("../../assets/images/tilmeldBillede.png");
@@ -136,6 +133,7 @@ ul.dropmenu > li:hover {
   font-weight: bold;
   padding: 10px 15px;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .kontakt {
@@ -148,10 +146,23 @@ ul.dropmenu > li:hover {
 }
 
 .twobuttons {
-  display: block;
+  flex: 1;
+  margin-top: 25px;
 }
 
+.flexbutton {
+  display: flex;
+  margin-left: 20px;
+}
 
+.flexmargin {
+  margin: auto;
+  width: 50px;
+}
+
+.tilmelding {
+  flex: 3;
+}
 
 /* SFO og børnehave
 ************************************* */
@@ -176,24 +187,16 @@ ul.dropmenu > li:hover {
 }
 
 
-.side-billede1 {
-  width: 100px;
-  height: 100px;
-  display: block;
-}
-
 .side-billede2 {
-  width: 100px;
-  height: 100px;
+  margin-bottom
+  width: 350px;
+  height: 300px;
   display: block;
 }
 
-
-
-
-
-
-
+.sfohaveURL {
+  background-image: url("../../assets/images/SFOBørnehave.png");
+}
 
 
 
@@ -241,6 +244,11 @@ ul.dropmenu > li:hover {
 .ogp {
   margin-left: 25%;
 }
+
+.omskolenURL {
+  background-image: url("../../assets/images/omskolen.png");
+}
+
 /* KONTAKT STYLES
 ************************************* */
 .kontaktURL {
