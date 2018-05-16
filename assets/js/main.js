@@ -167,3 +167,92 @@ function validateForm() {
         return false;
     }
 }
+
+//seneste modal
+
+function senesteModal1() {
+
+  //få fat i modal 1
+  var modal = document.querySelector(".modal1");
+
+  //få fat i knap der åbner modal 1
+  var btn = document.querySelector(".button1");
+
+  //få fat i span der lukker modal 1
+  var span = document.querySelector(".closebtn1");
+
+  //når man klikker på knap så åbner modal 1
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  //når man klikker på span så luk ned 1
+  span.onclick = function() {
+    modal.style.display = "none";
+
+    //når man klikker et sted uden for modal, luk ned 1
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+  }
+}
+}
+
+function senesteModal2() {
+
+  //få fat i modal 2
+  var modal = document.querySelector(".modal2");
+
+  //få fat i knap der åbner modal 2
+  var btn = document.querySelector(".button2");
+
+  //få fat i span der lukker modal 2
+  var span = document.querySelector(".closebtn2");
+
+  //når man klikker på knap så åbner modal 2
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  //når man klikker på span så luk ned 2
+  span.onclick = function() {
+    modal.style.display = "none";
+
+    //når man klikker et sted uden for modal, luk ned 2
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+  }
+}
+}
+
+function senesteModal3() {
+
+  //få fat i modal 3
+  var modal = document.querySelector(".modal3");
+
+  //få fat i knap der åbner modal 3
+  var btn = document.querySelector(".button3");
+
+  //få fat i span der lukker modal 3
+  var span = document.querySelector(".closebtn3");
+
+  //når man klikker på knap så åbner modal 3
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  //når man klikker på span så luk ned 3
+  span.onclick = function() {
+    modal.style.display = "none";
+
+    //når man klikker et sted uden for modal, luk ned 3
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+  }
+}
+}

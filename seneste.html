@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <title>Nyheder</title>
   </head>
-  <body>
+  <body onload="senesteModal1(); senesteModal2(); senesteModal3();">
 
     <nav>
       <div class="billede-container">
@@ -67,23 +67,53 @@
             <div class="nyheder-information">
               <p>Vi har netop været på lejrskole til Als, hvor børnene fik en masse oplevelser vi var bl.a. på...</p>
             </div>
-            <a href="#" class="button">Als lejrtur 2018</a>
+            <button class="button button1">Als lejrtur 2018</button>
+            <div class="modal modal1">
+              <div class="model-indhold">
+                <span class="closebtn closebtn1">&times;</span>
+                <div class="seneste-information">
+                  <h3>Als lejrtur 2018</h3>
+                  <img src="assets/images/klatre.png" alt="Als lejrtur 2018" class="modal-billede">
+                  <p>bla bla bla</p>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="nyheder-box">
-            <img src="assets/images/kreativeFag.png" alt="Als lejrtur 2018">
+            <img src="assets/images/kreativeFag.png" alt="kreative fag">
             <div class="nyheder-information">
               <p>I dag til sløjd havde børnene til opgave at lave noget, der  kunne bruges i køkkenet, der kom.. </p>
             </div>
-            <a href="#" class="button">Kreative fag</a>
+            <button class="button button2">Kreative fag</button>
+            <div class="modal modal2">
+              <div class="model-indhold">
+                <span class="closebtn closebtn2">&times;</span>
+                <div class="seneste-information">
+                  <h3>Kreative fag</h3>
+                  <img src="assets/images/kreativeFag.png" alt="kreative fag" class="modal-billede">
+                  <p>bla bla bla</p>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="nyheder-box">
-            <img src="assets/images/fastelavn.png" alt="Als lejrtur 2018">
+            <img src="assets/images/fastelavn.png" alt="fastelavn 2018">
             <div class="nyheder-information">
               <p>Kattekongen og kattedronningen i 4.-7. klasse blev fundet. De heldige vindere er...</p>
             </div>
-            <a href="#" class="button">Fastelavn</a>
+            <button class="button button3">Fastelavn 2018</button>
+            <div class="modal modal3">
+              <div class="model-indhold">
+                <span class="closebtn closebtn3">&times;</span>
+                <div class="seneste-information">
+                  <h3>Fastelavn 2018</h3>
+                  <img src="assets/images/fastelavn.png" alt="fastelavn 2018" class="modal-billede">
+                  <p>bla bla bla</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -107,5 +137,7 @@
         <a href="https://www.facebook.com/billumfriskole/" class="fa fa-facebook-square" target="_blank"></a>
       </div>
     </footer>
+
+    <script src="assets/js/main.js" charset="utf-8"></script>
   </body>
 </html>

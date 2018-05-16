@@ -459,17 +459,32 @@ input.button.submitbutton {
   height: 110px;
 }
 
-.nyheder-box a {
+.nyheder-box button {
   display: block;
   margin: 0;
   padding: 10px 0;
   width: 200px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 .nyheder-container {
   display: flex;
   justify-content: space-around;
   width: 60%;
+  margin: auto;
+}
+
+.seneste-information {
+  background-color: white;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #BF4C2B;
+}
+
+.modal-billede {
   margin: auto;
 }
 
