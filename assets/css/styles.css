@@ -287,6 +287,10 @@ nav {
   padding: 5px 5px;
 }
 
+input.button.submitbutton {
+  width: 90px;
+}
+
 .kontakt-beliggenhed {
   flex: 1;
   border: 1px solid #BF4C2B;
@@ -441,6 +445,7 @@ nav {
   height: 200px;
   margin: 10px;
 }
+
 
 /* VÆRDIGRUNDLAG STYLES
 ************************************* */
