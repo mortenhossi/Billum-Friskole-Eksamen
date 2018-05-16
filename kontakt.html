@@ -60,12 +60,12 @@
         <h2>Find os her</h2>
 
       <div class="flex">
-        <form>
+        <form name="kontakt" action="#" onsubmit="return validateForm()" method="post">
           <input type="text" name="navn" value="" placeholder="Navn">
           <input type="text" name="email" value="" placeholder="E-mail">
           <input type="text" name="telefonnummer" value="" placeholder="Telefonnummer">
-          <textarea name="name" rows="8" cols="80" placeholder="Besked"></textarea>
-          <a href="#" class="button">SEND</a>
+          <textarea name="textinput" rows="8" cols="80" placeholder="Besked"></textarea>
+          <input type="submit" name="" value="Send">
         </form>
 
         <div class="kontakt-beliggenhed">
@@ -95,5 +95,7 @@
         <a href="https://www.facebook.com/billumfriskole/" class="fa fa-facebook-square" target="_blank"></a>
       </div>
     </footer>
+
+    <script src="assets/js/main.js" charset="utf-8"></script>
   </body>
 </html>
