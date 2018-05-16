@@ -412,6 +412,15 @@ ul.dropmenu > li:hover {
   margin: auto;
 }
 
+/* Certificeret Tilsynsførende
+************************************* */
+.certificeretURL {
+  background-image: url("../../assets/images/certificeret.png");
+}
+
+
+
+
 /* galleri DIT BARN STYLES
 ************************************* */
 
