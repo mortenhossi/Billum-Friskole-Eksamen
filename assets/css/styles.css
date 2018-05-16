@@ -26,6 +26,7 @@ h1 {
 
 h2 {
   color: #205A79;
+  margin-top: 50px;
 }
 
 footer {
@@ -49,73 +50,71 @@ a {
 /* NAVIGATION STYLES
 ************************************* */
 
-.billumimg {
-  width: 300px;
-  height: 100px;
+nav {
+  background: white;
+  display: flex;
+  align-items: center;
+
 }
 
-.tilmeldnav {
-  color: #ffffff;
-  background: #205A79;
-  border-style: none;
-  cursor: pointer;
+.billumimg {
+  height: 50px;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.dropbtn {
+  padding: 30px 16px;
+  border: none;
+  background-color: white;
+  color: #205A79;
+  font-size: 16px;
+}
+
+.links-container {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.tilmeldbtn {
+  background: #BF4C2B;
+  color: white;
 }
 
 .dropdown {
-  margin-top: -29px;
-}
-
-.dropbutton {
-  width: 150px;
-  background: #ffffff;
-  color: #205A79;
-  height: 75px;
-  border-style: none;
-  list-style-type: none;
-  cursor: pointer;
-}
-
-.dropdown > ul {
-  background: #ffffff;
-  color: #205A79;
-  display: flex;
-  font-size: 30px;
-}
-
-.dropdown > ul > li {
-  display: block;
-  flex: 1;
-  list-style-type: none;
-  text-align: center;
   position: relative;
-  padding: 7px 25px;
+  display: inline-block;
 }
 
-.dropdown > ul > li:hover {
-  background: #ffffff;
-  color: #205A79;
-}
-
-ul.dropmenu {
-  position: absolute;
-  background: #F2F2F2;
-  list-style-type: none;
-  width: 328px;
-  margin-top: 7px;
-  margin-left: -25px;
-  padding-left: 0px;
+.dropdown-content {
   display: none;
-}
-
-ul.dropmenu > li:hover {
-  color: #ffffff;
-  background: #205A79;
-}
-
-.dropdown li:hover .dropmenu {
-  display: block;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
   z-index: 1;
 }
+
+.dropdown-content a {
+  color: #205a79;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #F2F2F2;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #205a79;
+  color: white;
+}
+
 
 
 /* TILMELD DIT BARN STYLES
@@ -125,28 +124,20 @@ ul.dropmenu > li:hover {
   background-image: url("../../assets/images/tilmeldBillede.png");
 }
 
-.tilmeld {
-  background: #BF4C2B;
-  color: white;
-  border-style: none;
-  font-weight: bold;
-  padding: 10px 15px;
-  cursor: pointer;
-  margin-bottom: 20px;
-}
-
-.kontakt {
-  background: #BF4C2B;
-  color: white;
-  border-style: none;
-  font-weight: bold;
-  padding: 10px 15px;
-  cursor: pointer;
+.twobuttons .tilmeldbtns  {
+  margin-top: 20px;
 }
 
 .twobuttons {
   flex: 1;
-  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.twobuttons a {
+  display: block;
+  width: 100%;
 }
 
 .flexbutton {
@@ -156,7 +147,6 @@ ul.dropmenu > li:hover {
 
 .flexmargin {
   margin: auto;
-  width: 50px;
 }
 
 .tilmelding {
@@ -412,6 +402,7 @@ ul.dropmenu > li:hover {
   margin: auto;
 }
 
+<<<<<<< HEAD
 /* Certificeret Tilsynsførende
 ************************************* */
 .certificeretURL {
@@ -422,7 +413,61 @@ ul.dropmenu > li:hover {
 
 
 /* galleri DIT BARN STYLES
+=======
+/* galleri STYLES
 ************************************* */
+.galleriURL {
+  background-image: url("../../assets/images/galleriBillede.png");
+}
+
+.galleri-sektion h2 {
+  text-align: center;
+}
+
+.billeder {
+  display: flex;
+  flex-wrap: wrap;
+  width: 880px;
+  margin: auto;
+}
+
+.galleri-sektion img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+/* VÆRDIGRUNDLAG STYLES
+************************************* */
+.værdierURL {
+  background-image: url("../../assets/images/vaerdigrundlagBillede.png");
+}
+
+.værdier-sektion h2 {
+  margin-left: 20px;
+}
+
+.værdier-sektion ul {
+    background-color: #BF4C2B;
+    width: 80%;
+    margin-left: 20px;
+}
+
+.værdier-sektion li {
+  padding: 10px;
+  color: white;
+}
+
+/* VEDTÆGTER STYLES
+>>>>>>> b5c008c911b1f1135cdc1e8967cd47e446af714b
+************************************* */
+.vedtægterURL {
+  background-image: url("../../assets/images/vedtægterBillede.png");
+}
+
+.vedtægter-sektion {
+  margin-left: 20px;
+}
 
 /* FOOTER STYLES
 ************************************* */
@@ -430,12 +475,12 @@ footer {
   display: flex;
   background: #205A79;
   color: white;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-top: 100px;
 }
 
-.social-footer {
-  margin-right: 20px;
+.intranet-footer {
+  margin: 0 200px;
 }
 
 .social-footer a {
@@ -446,4 +491,78 @@ footer {
 
 .kontakt-footer {
   margin-left: 20px;
+}
+
+/* INDEX STYLES
+************************************* */
+.indexURL {
+  background-image: url("../../assets/images/indexBillede.png");
+}
+
+.friskolentext {
+  text-align: center;
+}
+
+.marginfirs {
+  width: 80%;
+  margin: auto;
+}
+
+.fleximg {
+  display: flex;
+}
+
+.fleximg img {
+  width: 300px;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+}
+
+.valueboxes {
+  display: flex;
+  padding: 20px;
+}
+
+.value {
+  flex: 1;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.valueboxes h2 {
+  color: #BF4C2B;
+}
+
+.value p {
+  color: #ffffff;
+  background: #BF4C2B;
+  padding: 10px;
+  width: 200px;
+  height: 150px;
+  margin: auto;
+}
+
+.sfobh {
+  display: flex;
+}
+
+.overskriftbh {
+  margin-top: 60px;
+}
+
+.billedersfobh img {
+  width: 175px;
+  padding: 20px;
+}
+
+.tekstsfobh {
+  flex: 4;
+  margin-right: 40px;
+}
+
+.billedersfobh {
+  flex: 1;
 }
