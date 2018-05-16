@@ -660,3 +660,18 @@ footer {
 .billedersfobh {
   flex: 1;
 }
+
+.kalenderfil {
+  text-align: center;
+  background-color: #BF4C2B;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.kalenderURL {
+  background-image: url("../../assets/images/kalender.png");
+}
+
+.kalenderfil span{
+  color: white;
+}
