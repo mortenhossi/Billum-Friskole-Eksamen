@@ -15,7 +15,7 @@ function ansatte1() {
     modalImg.style.height = "198px";
     modalImg.style.borderRadius = "0";
   }
-}
+
 
 
 
