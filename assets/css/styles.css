@@ -469,6 +469,18 @@ nav {
   margin: auto;
 }
 
+<<<<<<< HEAD
+/* Certificeret Tilsynsførende
+************************************* */
+.certificeretURL {
+  background-image: url("../../assets/images/certificeret.png");
+}
+
+
+
+
+/* galleri DIT BARN STYLES
+=======
 /* galleri STYLES
 ************************************* */
 .galleriURL {
@@ -514,6 +526,7 @@ nav {
 }
 
 /* VEDTÆGTER STYLES
+>>>>>>> b5c008c911b1f1135cdc1e8967cd47e446af714b
 ************************************* */
 .vedtægterURL {
   background-image: url("../../assets/images/vedtægterBillede.png");
