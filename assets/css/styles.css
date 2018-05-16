@@ -287,8 +287,8 @@ nav {
   padding: 5px 5px;
 }
 
-.submitbutton {
-  width: 10px;
+input.button.submitbutton {
+  width: 90px;
 }
 
 .kontakt-beliggenhed {
