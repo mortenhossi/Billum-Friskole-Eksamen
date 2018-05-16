@@ -287,6 +287,10 @@ nav {
   padding: 5px 5px;
 }
 
+.submitbutton {
+  width: 10px;
+}
+
 .kontakt-beliggenhed {
   flex: 1;
   border: 1px solid #BF4C2B;
