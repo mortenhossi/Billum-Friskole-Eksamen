@@ -153,7 +153,7 @@ nav {
   flex: 3;
 }
 
-/* SFO OG BØRNEHAVE STYLEZ
+/* SFO og børnehave
 ************************************* */
 .containersfo {
   width: 100%;
@@ -188,7 +188,7 @@ nav {
 
 
 
-/* OM SKOLEN STYLES
+/* Om skolen
 ************************************* */
 .containeromskolen {
   width: 100%;
@@ -310,11 +310,76 @@ input.button.submitbutton {
   text-align: center;
 }
 
-.ansat-box img {
+.ansatpic {
   border-radius: 50%;
   width: 200px;
   height: 198px;
   margin: 0px 50px;
+  cursor: pointer;
+  transition: 0.4s
+}
+
+.ansatpic:hover {
+  opacity: 0.8;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-indhold {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.picinfo {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-indhold, .picinfo {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+.closebtn {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f2f2f2;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.close:hover, .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@@media only screen and (max-width: 700px) {
+  .modal-indhold {
+    width: 100%;
+  }
 }
 
 .ansatteURL {
@@ -335,6 +400,8 @@ input.button.submitbutton {
 .ansat-information p {
   margin-top: 0;
 }
+
+
 
 /* PRISER STYLES
 ************************************* */
@@ -407,6 +474,7 @@ input.button.submitbutton {
   margin: auto;
 }
 
+<<<<<<< HEAD
 .seneste-information {
   background-color: white;
   width: 50%;
@@ -420,6 +488,8 @@ input.button.submitbutton {
   margin: auto;
 }
 
+=======
+>>>>>>> parent of 0443f7b... tilføjelser + kalender
 /* Certificeret Tilsynsførende
 ************************************* */
 .certificeretURL {
@@ -435,8 +505,8 @@ input.button.submitbutton {
 }
 
 
-
-
+/* galleri DIT BARN STYLES
+=======
 /* galleri STYLES
 ************************************* */
 .galleriURL {
@@ -531,19 +601,6 @@ footer {
   margin: auto;
 }
 
-.fleximg {
-  display: flex;
-}
-
-.fleximg img {
-  width: 300px;
-}
-
-.column {
-  flex: 1;
-  padding: 20px;
-}
-
 .valueboxes {
   display: flex;
   padding: 20px;
@@ -568,9 +625,7 @@ footer {
   margin: auto;
 }
 
-.sfobh {
-  display: flex;
-}
+
 
 .overskriftbh {
   margin-top: 60px;
@@ -582,12 +637,9 @@ footer {
 }
 
 .tekstsfobh {
-  flex: 4;
-  margin-right: 40px;
-}
-
-.billedersfobh {
-  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 30px;
 }
 
 /* KALENDER STYLES
@@ -596,17 +648,18 @@ footer {
   text-align: center;
 }
 
-.kalenderfil span {
-  color: white;
+.sfo-information h2 {
+  margin-top: 0;
 }
 
-.kalenderfil {
-  text-align: center;
-  background-color: #BF4C2B;
-  margin-left: 25%;
-  margin-right: 25%;
+.sfo-information p {
+  width: 90%;
 }
 
-.kalenderURL {
-  background-image: url("../../assets/images/kalenderpic.png");
+.sfo-billede img {
+  width: 200px;
+}
+
+.billedersfobh {
+  flex: 1;
 }
