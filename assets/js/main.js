@@ -134,3 +134,36 @@ function ansatte5() {
     modal.style.display = "none";
   }
 }
+
+function validateForm() {
+    var navn = document.forms["kontakt"]["navn"].value;
+    var email = document.forms["kontakt"]["email"].value;
+    var telefonNummer = document.forms["kontakt"]["telefonnummer"].value;
+    var textInput = document.forms["kontakt"]["textinput"].value;
+
+    if (navn == "") {
+        alert("Udfyld venligst Navn");
+        return false;
+    }
+    if (!/^[a-åA-Å]*$/g.test(document.forms["kontakt"]["navn"].value)) {
+        alert("Benyt venligst kun bogstaver");
+        document.kontakt.navn.focus();
+        return false;
+    }
+    if (email == "") {
+        alert("Udfyld venligst E-mail")
+        return false;
+    }
+    if (telefonNummer == "") {
+        alert("Udfyld venligst Telefonnummer")
+        return false;
+    }
+    if (!/^[0-9]*$/g.test(document.forms["kontakt"]["telefonnummer"].value)) {
+        alert("Benyt venligst kun tal")
+        return false
+    }
+    if (textInput == "") {
+        alert("Udfyld venligst besked")
+        return false;
+    }
+}
