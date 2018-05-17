@@ -14,8 +14,7 @@ h1 {
 
 .billede-overlay {
   background-size: contain;
-  width: 100vw;
-  height: 22.5vw;
+  height: 22.3vw;
   position: relative;
 }
 
@@ -45,6 +44,19 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+}
+
+.ansat-box .blockdisplay {
+  display: block;
+}
+
+.ansat-box .displaynone {
+  display: none;
+}
+
+.modal .billedetest {
+  width: 200px;
+  height: 198px;
 }
 
 /* NAVIGATION STYLES
@@ -186,7 +198,44 @@ nav {
   background-image: url("../../assets/images/SFOBørnehave.png");
 }
 
+.åbningstider {
+  background: white;
+  margin-top: 100px;
+}
 
+.åbningstider h3 {
+  text-align: center;
+  border-bottom: 2px solid #F2F2F2;
+  background: #BF4C2B;
+  color: white;
+  padding: 10px;
+}
+
+.åbningstider h4 {
+  padding: 10px 20px;
+}
+
+.info-åbningstider {
+  padding: 5px 20px;
+  background: #205A79;
+  color: white;
+}
+
+.button-åbningstider {
+  border: none;
+  font-size: 24px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.button-åbningstider:focus {
+  outline: none;
+}
+
+.info-flex {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* Om skolen
 ************************************* */
@@ -283,7 +332,7 @@ nav {
   color: white;
   font-weight: bold;
   margin-top: 5px;
-  padding: 5px 5px;
+  padding: 10px;
 }
 
 input.button.submitbutton {
@@ -477,11 +526,10 @@ input.button.submitbutton {
 
 .seneste-information {
   background-color: white;
-  width: 50%;
+  width: 40%;
   margin: auto;
   padding: 20px;
   text-align: center;
-  border: 2px solid #BF4C2B;
 }
 
 .modal-billede {
