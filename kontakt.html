@@ -49,7 +49,6 @@
         <a href="tilmeld.html" class="dropbtn tilmeldbtn">Tilmeld</a>
       </div>
     </nav>
-    </nav>
 
     <main>
       <section class="kontaktbillede">
@@ -63,11 +62,23 @@
 
       <div class="flex">
         <form name="kontakt" action="#" onsubmit="return validateForm()" method="post">
-          <input type="text" name="navn" value="" placeholder="Navn">
-          <input type="text" name="email" value="" placeholder="E-mail">
-          <input type="text" name="telefonnummer" value="" placeholder="Telefonnummer">
-          <textarea name="textinput" rows="8" cols="80" placeholder="Besked"></textarea>
-          <input type="submit" name="" value="Send" class="button submitbutton">
+          <div class="form-flex">
+            <input type="text" name="navn" value="" placeholder="Navn">
+            <p class="req">*</p>
+          </div>
+          <div class="form-flex">
+            <input type="text" name="email" value="" placeholder="E-mail">
+            <p class="req">*</p>
+          </div>
+          <div class="form-flex">
+            <input type="text" name="telefonnummer" value="" placeholder="Telefonnummer">
+            <p class="req">*</p>
+          </div>
+          <div class="form-flex">
+            <textarea name="textinput" rows="8" cols="80" placeholder="Besked"></textarea>
+            <p class="req">*</p>
+          </div>
+          <input type="submit" name="send" value="Send" class="button submitbutton">
         </form>
 
         <div class="kontakt-beliggenhed">
@@ -98,6 +109,6 @@
       </div>
     </footer>
 
-    <script src="assets/js/main.js" charset="utf-8"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

@@ -340,6 +340,10 @@ input.button.submitbutton {
   font-size: 14px;
 }
 
+input.button.submitbutton:focus {
+  outline: none;
+}
+
 .kontakt-beliggenhed {
   flex: 1;
   border: 1px solid #BF4C2B;
@@ -348,6 +352,20 @@ input.button.submitbutton {
   background: white;
 }
 
+.form-flex {
+  display: flex;
+  align-items: center;
+}
+
+.req {
+  margin: 0;
+  margin-left: 10px;
+  color: red;
+}
+
+  .redborder {
+  border: 10px solid red;
+}
 /* ANSATTE STYLES
 ************************************* */
 
@@ -407,6 +425,11 @@ input.button.submitbutton {
 .modal-indhold, .picinfo {
   animation-name: zoom;
   animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
 }
 
 .closebtn {

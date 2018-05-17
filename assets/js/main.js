@@ -24,30 +24,35 @@ function validateForm() {
     var email = document.forms["kontakt"]["email"].value;
     var telefonNummer = document.forms["kontakt"]["telefonnummer"].value;
     var textInput = document.forms["kontakt"]["textinput"].value;
+    var required = document.querySelectorAll(".req");
 
     if (navn == "") {
-        alert("Udfyld venligst Navn");
+        required[0].innerHTML = "Udfyld venligst navn";
         return false;
     }
-    if (!/^[a-åA-Å]*$/g.test(document.forms["kontakt"]["navn"].value)) {
-        alert("Benyt venligst kun bogstaver");
+    if (!/^[a-æøåA-ÆØÅ]*$/g.test(document.forms["kontakt"]["navn"].value)) {
+        required[0].innerHTML = "Benyt venligst bogstaver";
         document.kontakt.navn.focus();
         return false;
     }
     if (email == "") {
-        alert("Udfyld venligst E-mail")
+        required[1].innerHTML = "Udfyld venligst E-mail";
         return false;
     }
     if (telefonNummer == "") {
-        alert("Udfyld venligst Telefonnummer")
+        required[2].innerHTML = "Udfyld venligst telefonnumer";
+        return false;
+    }
+    if (telefonNummer.length != 8) {
+        required[2].innerHTML = "Skriv venligst 8 cifre";
         return false;
     }
     if (!/^[0-9]*$/g.test(document.forms["kontakt"]["telefonnummer"].value)) {
-        alert("Benyt venligst kun tal")
+        required[2].innerHTML = "Benyt venligst tal";
         return false
     }
     if (textInput == "") {
-        alert("Udfyld venligst besked")
+        required[3].innerHTML = "Skriv venligst en besked";
         return false;
     }
 }
