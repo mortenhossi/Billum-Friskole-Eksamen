@@ -198,12 +198,12 @@ nav {
   background-image: url("../../assets/images/SFOBørnehave.png");
 }
 
-.åbningstider {
+.aabningstider {
   background: white;
   margin-top: 100px;
 }
 
-.åbningstider h3 {
+.aabningstider h3 {
   text-align: center;
   border-bottom: 2px solid #F2F2F2;
   background: #BF4C2B;
@@ -211,24 +211,24 @@ nav {
   padding: 10px;
 }
 
-.åbningstider h4 {
+.aabningstider h4 {
   padding: 10px 20px;
 }
 
-.info-åbningstider {
+.info-aabningstider {
   padding: 5px 20px;
   background: #205A79;
   color: white;
 }
 
-.button-åbningstider {
+.button-aabningstider {
   border: none;
   font-size: 24px;
   padding: 20px;
   cursor: pointer;
 }
 
-.button-åbningstider:focus {
+.button-aabningstider:focus {
   outline: none;
 }
 
@@ -602,32 +602,32 @@ input.button.submitbutton:focus {
 
 /* VÆRDIGRUNDLAG STYLES
 ************************************* */
-.værdierURL {
+.vaerdierURL {
   background-image: url("../../assets/images/vaerdigrundlagBillede.png");
 }
 
-.værdier-sektion h2 {
+.vaerdier-sektion h2 {
   margin-left: 20px;
 }
 
-.værdier-sektion ul {
+.vaerdier-sektion ul {
     background-color: #BF4C2B;
     width: 80%;
     margin-left: 20px;
 }
 
-.værdier-sektion li {
+.vaerdier-sektion li {
   padding: 10px;
   color: white;
 }
 
 /* VEDTÆGTER STYLES
 ************************************* */
-.vedtægterURL {
+.vedtaegterURL {
   background-image: url("../../assets/images/vedtægterBillede.png");
 }
 
-.vedtægter-sektion {
+.vedtaegter-sektion {
   margin-left: 20px;
 }
 
