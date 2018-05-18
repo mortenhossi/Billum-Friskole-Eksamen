@@ -449,7 +449,7 @@ input.button.submitbutton:focus {
   cursor: pointer;
 }
 
-@@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
   .modal-indhold {
     width: 100%;
   }
@@ -573,9 +573,6 @@ input.button.submitbutton:focus {
   margin-right: 40%;
 }
 
-
-/* galleri DIT BARN STYLES
-=======
 /* galleri STYLES
 ************************************* */
 .galleriURL {
@@ -597,8 +594,53 @@ input.button.submitbutton:focus {
   width: 200px;
   height: 200px;
   margin: 10px;
+  cursor: pointer;
 }
 
+.galleri-sektion img:hover {
+  opacity: 0.7;
+}
+
+
+.galleri-sektion .galleri-modal {
+  display: none;
+   position: fixed;
+   z-index: 1;
+   padding-top: 100px;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgb(0,0,0);
+   background-color: rgba(0,0,0,0.9);
+}
+
+.galleri-sektion .galleri-indhold {
+    margin: auto;
+    display: block;
+    width: 500px;
+    height: 400px;
+}
+
+.galleri-sektion .galleri-caption {
+  margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.galleri-sektion .galleriblock {
+  display: block;
+}
+
+.galleri-sektion .gallerinone {
+  display: none;
+}
 
 /* VÆRDIGRUNDLAG STYLES
 ************************************* */

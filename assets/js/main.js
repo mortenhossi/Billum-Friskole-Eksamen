@@ -12,7 +12,7 @@ function ansatte() {
       imgtest[3].classList.add("billedetest");
       modaltest.classList.add("blockdisplay");
       imgtest[1].onclick = function() {
-        modaltest.classList.remove("blockdisplay");
+      modaltest.classList.remove("blockdisplay");
       }
     }
   }
@@ -150,11 +150,11 @@ function senesteModal3() {
 
 function workingHours1() {
   //get togglebtn
-  var togglebtn = document.querySelector(".button-åbningstider1");
+  var togglebtn = document.querySelector(".button-aabningstider1");
 
   //toggle on click
   togglebtn.onclick = function() {
-    var workinghours = document.querySelector(".info-åbningstider1")
+    var workinghours = document.querySelector(".info-aabningstider1")
     if (workinghours.style.display === "none") {
         workinghours.style.display = "block";
     } else {
@@ -165,15 +165,33 @@ function workingHours1() {
 
 function workingHours2() {
   //get headline
-  var togglebtn = document.querySelector(".button-åbningstider2");
+  var togglebtn = document.querySelector(".button-aabningstider2");
 
   //toggle on headline click
   togglebtn.onclick = function() {
-    var workinghours = document.querySelector(".info-åbningstider2")
+    var workinghours = document.querySelector(".info-aabningstider2")
     if (workinghours.style.display === "none") {
         workinghours.style.display = "block";
     } else {
         workinghours.style.display = "none";
+    }
+  }
+}
+
+//modal popup galleri
+function galleri() {
+  var galleriPic = document.querySelectorAll(".galleri-pic");
+  for (var i = 0; i < galleriPic.length; i++) {
+    galleriPic[i].onclick = function() {
+      var modal = this.nextElementSibling;
+      var image = modal.childNodes;
+      image[3].setAttribute("src", this.src);
+      image[3].classList.add("billedetest");
+      modal.classList.add("galleriblock");
+      image[5].innerHTML = this.alt;
+      image[1].onclick = function() {
+      modal.classList.remove("galleriblock");
+    }
     }
   }
 }
