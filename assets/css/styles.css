@@ -5,6 +5,7 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   background: #F2F2F2;
+  font-size: 16px;
 }
 
 h1 {
@@ -335,6 +336,10 @@ nav {
   padding: 10px;
 }
 
+.button:hover {
+  opacity: 0.9;
+}
+
 input.button.submitbutton {
   width: 90px;
   font-size: 14px;
@@ -616,6 +621,11 @@ input.button.submitbutton:focus {
    background-color: rgba(0,0,0,0.9);
 }
 
+.galleri-sektion .galleri-caption, .galleri-sektion .galleri-indhold {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
 .galleri-sektion .galleri-indhold {
     margin: auto;
     display: block;
@@ -780,6 +790,15 @@ footer {
   background-color: #BF4C2B;
   margin-left: 25%;
   margin-right: 25%;
+  color: white;
+}
+
+.kalenderfil hr {
+  border: 1px solid #205a79;
+}
+
+.kalenderfil h3 {
+  color: #205A79;
 }
 
 .kalenderURL {
@@ -787,5 +806,6 @@ footer {
 }
 
 .kalenderfil span{
-  color: white;
+  color: #205A79;
+  font-weight: bold;
 }
