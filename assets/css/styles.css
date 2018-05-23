@@ -429,7 +429,7 @@ input.button.submitbutton:focus {
 
 .modal-indhold, .picinfo {
   animation-name: zoom;
-  animation-duration: 0.6s;
+  animation-duration: 0.5s;
 }
 
 @keyframes zoom {
@@ -564,6 +564,11 @@ input.button.submitbutton:focus {
   margin: auto;
 }
 
+.nyheder-box .seneste-information {
+  animation-name: zoom;
+  animation-duration: 0.5s;
+}
+
 /* Certificeret Tilsynsførende
 ************************************* */
 .certificeretURL {
@@ -623,7 +628,7 @@ input.button.submitbutton:focus {
 
 .galleri-sektion .galleri-caption, .galleri-sektion .galleri-indhold {
   animation-name: zoom;
-  animation-duration: 0.6s;
+  animation-duration: 0.5s;
 }
 
 .galleri-sektion .galleri-indhold {
