@@ -29,31 +29,45 @@ function validateForm() {
     if (navn == "") {
         required[0].innerHTML = "Udfyld venligst navn";
         return false;
+    } else {
+      required[0].innerHTML = "*";
     }
     if (!/^[a-æøåA-ÆØÅ]*$/g.test(document.forms["kontakt"]["navn"].value)) {
         required[0].innerHTML = "Benyt venligst bogstaver";
         document.kontakt.navn.focus();
         return false;
+    } else {
+      required[0].innerHTML = "*";
     }
     if (email == "") {
         required[1].innerHTML = "Udfyld venligst E-mail";
         return false;
+    } else {
+      required[1].innerHTML = "*";
     }
     if (telefonNummer == "") {
         required[2].innerHTML = "Udfyld venligst telefonnumer";
         return false;
+    } else {
+      required[2].innerHTML = "*";
     }
     if (telefonNummer.length != 8) {
         required[2].innerHTML = "Skriv venligst 8 cifre";
         return false;
+    } else {
+      required[2].innerHTML = "*";
     }
     if (!/^[0-9]*$/g.test(document.forms["kontakt"]["telefonnummer"].value)) {
         required[2].innerHTML = "Benyt venligst tal";
         return false
+    } else {
+      required[2].innerHTML = "*";
     }
     if (textInput == "") {
         required[3].innerHTML = "Skriv venligst en besked";
         return false;
+    } else {
+      required[3].innerHTML = "*";
     }
 }
 
