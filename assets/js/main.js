@@ -6,13 +6,13 @@ function ansatte() {
   var img = document.querySelectorAll(".ansatpic");
   for (var i = 0; i < img.length; i++) {
     img[i].onclick = function() {
-      var modaltest = this.nextElementSibling;
-      var imgtest = modaltest.childNodes;
-      imgtest[3].setAttribute("src", this.src);
-      imgtest[3].classList.add("billedetest");
-      modaltest.classList.add("blockdisplay");
-      imgtest[1].onclick = function() {
-      modaltest.classList.remove("blockdisplay");
+      var modal = this.nextElementSibling;
+      var imgNodes = modal.childNodes;
+      imgNodes[3].setAttribute("src", this.src);
+      imgNodes[3].classList.add("billedetest");
+      modal.classList.add("blockdisplay");
+      imgNodes[1].onclick = function() {
+      modal.classList.remove("blockdisplay");
       }
     }
   }
