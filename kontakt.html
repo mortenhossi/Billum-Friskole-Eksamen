@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>Kontakt | Find os her | Billum Friskole</title>
   </head>
-  <body>
+  <body onload="validateForm();">
     <nav>
       <div class="billede-container">
         <a href="index.html"><img src="assets/images/billumlogo.png" class="billumimg" alt="Billum Friskole logo"></a>
@@ -63,19 +63,19 @@
       <div class="flex">
         <form name="kontakt" action="#" onsubmit="return validateForm()" method="post">
           <div class="form-flex">
-            <input type="text" name="navn" value="" placeholder="Navn">
+            <input type="text" name="navn" value="" placeholder="Navn" class="navninput">
             <p class="req">*</p>
           </div>
           <div class="form-flex">
-            <input type="text" name="email" value="" placeholder="E-mail">
+            <input type="text" name="email" value="" placeholder="E-mail" class="emailinput">
             <p class="req">*</p>
           </div>
           <div class="form-flex">
-            <input type="text" name="telefonnummer" value="" placeholder="Telefonnummer">
+            <input type="text" name="telefonnummer" value="" placeholder="Telefonnummer" class="nummerinput">
             <p class="req">*</p>
           </div>
           <div class="form-flex">
-            <textarea name="textinput" rows="8" cols="80" placeholder="Besked"></textarea>
+            <textarea name="textinput" rows="8" cols="80" placeholder="Besked" class="beskedinput"></textarea>
             <p class="req">*</p>
           </div>
           <input type="submit" name="send" value="Send" class="button submitbutton">

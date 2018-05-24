@@ -18,63 +18,60 @@ function ansatte() {
   }
 }
 
-// form validation
 function validateForm() {
-    var navn = document.forms["kontakt"]["navn"].value;
-    var email = document.forms["kontakt"]["email"].value;
-    var telefonNummer = document.forms["kontakt"]["telefonnummer"].value;
-    var textInput = document.forms["kontakt"]["textinput"].value;
-    var required = document.querySelectorAll(".req");
-    // hvis man ikke skriver noget i navn input
-    if (navn == "") {
-        required[0].innerHTML = "Udfyld venligst navn";
-        return false;
+  var navn = document.querySelector(".navninput");
+  var email = document.querySelector(".emailinput");
+  var number = document.querySelector(".nummerinput");
+  var submit = document.querySelector(".submitbutton");
+  var besked = document.querySelector(".beskedinput");
+  var required = document.querySelectorAll(".req");
+
+  submit.onclick = function() {
+    // hvis man ikke skriver noget i navn input eller bruger tal i navn
+    if (navn.value == "") {
+      required[0].innerHTML = "Udfyld venligst navn";
+      return false;
+    } else if (!isNaN(navn.value) && navn.value.length > 1) {
+      required[0].innerHTML = "Benyt venligst bogstaver";
+      return false;
     } else {
       required[0].innerHTML = "*";
     }
-    // hvis man ikke benytter bogstaver i navn input
-    if (!/^[a-æøåA-ÆØÅ]*$/g.test(document.forms["kontakt"]["navn"].value)) {
-        required[0].innerHTML = "Benyt venligst bogstaver";
-        document.kontakt.navn.focus();
-        return false;
-    } else {
-      required[0].innerHTML = "*";
-    }
-    // hvis man ikke skriver noget i email input
-    if (email == "") {
-        required[1].innerHTML = "Udfyld venligst E-mail";
-        return false;
+
+    // hvis man ikke skriver noget i email eller ikke bruger @ i email
+    if (email.value == "") {
+      required[1].innerHTML = "Udfyld venligst E-mail";
+      return false;
+    } else if (!email.value.includes("@")) {
+      required[1].innerHTML = "Skriv venligst korrekt E-mail";
+      return false;
     } else {
       required[1].innerHTML = "*";
     }
-    // Hvis man ikke skriver noget i telefonnummer input
-    if (telefonNummer == "") {
-        required[2].innerHTML = "Udfyld venligst telefonnumer";
-        return false;
+
+    //hvis man ikke skriver noget i nummer, bruger bogstaver eller ikke skiver 8 cifre
+    if (number.value == "") {
+      required[2].innerHTML = "Skriv venligst telefonnummer";
+      return false;
+    } else if (isNaN(number.value)) {
+      required[2].innerHTML = "Benyt venligst tal";
+      return false;
+    } else if (number.value.length != 8) {
+      required[2].innerHTML = "Skriv venligst 8 cifre";
+      return false;
     } else {
       required[2].innerHTML = "*";
     }
-    // hvis telefonnummer ikke er 8 cifre
-    if (telefonNummer.length != 8) {
-        required[2].innerHTML = "Skriv venligst 8 cifre";
-        return false;
-    } else {
-      required[2].innerHTML = "*";
-    }
-    // hvis man ikke benytter tal i telefonnummer input
-    if (!/^[0-9]*$/g.test(document.forms["kontakt"]["telefonnummer"].value)) {
-        required[2].innerHTML = "Benyt venligst tal";
-        return false
-    } else {
-      required[2].innerHTML = "*";
-    }
-    // hvis man ikke skriver noget i besked textarea
-    if (textInput == "") {
-        required[3].innerHTML = "Skriv venligst en besked";
-        return false;
+
+    // hvis man ikke skriver noget i besked input
+    if (besked.value == "") {
+      required[3].innerHTML = "Skriv venligst en besked";
+      return false;
     } else {
       required[3].innerHTML = "*";
     }
+  }
+
 }
 
 //seneste modal
