@@ -11,6 +11,8 @@ body {
 h1 {
   margin: 0;
   padding: 0;
+  font-family: "Kalam", cursive;
+  font-size: 32px;
 }
 
 .billede-overlay {
@@ -19,7 +21,7 @@ h1 {
   position: relative;
 }
 
-.flex {
+.kontakt-flex {
   display: flex;
   width: 100%;
 }
@@ -67,7 +69,6 @@ nav {
   background: white;
   display: flex;
   align-items: center;
-
 }
 
 .billumimg {
@@ -328,7 +329,7 @@ nav {
   .button {
   text-decoration: none;
   background: #BF4C2B;
-  width: 10%;
+
   text-align: center;
   color: white;
   font-weight: bold;
@@ -505,6 +506,7 @@ input.button.submitbutton:focus {
   display: block;
   margin: auto;
   margin-top: 20px;
+  width: 10%;
 }
 
 
@@ -514,8 +516,16 @@ input.button.submitbutton:focus {
   background-image: url("../../assets/images/nyhederBillede.png");
 }
 
-.nyheder-sektion h2 {
+.nyheder-sektion h2, .nyheder-sektion h3 {
   text-align: center;
+}
+
+.nyheder-sektion h3 a {
+  color: #BF4C2B;
+}
+
+.nyheder-sektion h3 a:hover {
+  opacity: 0.7;
 }
 
 .nyheder-box img {
@@ -601,8 +611,8 @@ input.button.submitbutton:focus {
 }
 
 .galleri-sektion img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   margin: 10px;
   cursor: pointer;
 }
@@ -626,7 +636,7 @@ input.button.submitbutton:focus {
    background-color: rgba(0,0,0,0.9);
 }
 
-.galleri-sektion .galleri-caption, .galleri-sektion .galleri-indhold {
+.galleri-sektion .galleri-indhold {
   animation-name: zoom;
   animation-duration: 0.5s;
 }
@@ -638,16 +648,6 @@ input.button.submitbutton:focus {
     height: 400px;
 }
 
-.galleri-sektion .galleri-caption {
-  margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
 
 .galleri-sektion .galleriblock {
   display: block;
@@ -655,6 +655,50 @@ input.button.submitbutton:focus {
 
 .galleri-sektion .gallerinone {
   display: none;
+}
+
+.galleri-sektion h3 {
+  text-align: center;
+  background: white;
+  padding: 10px 0px;
+  margin: auto;
+}
+
+.galleri-container {
+  background-color: #205A79;
+  width: 70%;
+  margin: auto;
+}
+
+.galleri-knapper {
+  padding: 10px;
+}
+
+.galleri-knapper button {
+  margin-right: 10px;
+  background: #BF4C2B;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.galleri-knapper button:focus {
+  outline: none;
+}
+
+.galleri-billeder {
+  background: white;
+  width: 70%;
+  height: 350px;
+  overflow: scroll;
+  margin: auto;
+}
+
+.galleri-knapper .bluebutton {
+  color: #205A79;
 }
 
 /* VÆRDIGRUNDLAG STYLES
@@ -696,10 +740,11 @@ footer {
   color: white;
   justify-content: flex-start;
   margin-top: 100px;
+
 }
 
 .intranet-footer {
-  margin: 0 200px;
+  margin: 0 10%;
 }
 
 .social-footer a {
@@ -709,7 +754,7 @@ footer {
 }
 
 .kontakt-footer {
-  margin-left: 20px;
+  margin-left: 5%;
 }
 
 /* INDEX STYLES
@@ -730,6 +775,7 @@ footer {
 .valueboxes {
   display: flex;
   padding: 20px;
+  justify-content: space-around;
 }
 
 .value {
@@ -813,4 +859,254 @@ footer {
 .kalenderfil span{
   color: #205A79;
   font-weight: bold;
+}
+
+/*
+Responsiv styles
+*********************************/
+
+
+/*
+Responsiv navigation
+*********************************/
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #205A79;
+    overflow-x: scroll;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.side-nav h3 {
+  color: #BF4C2B;
+  padding: 8px 8px 8px 32px;
+  margin: 0;
+  font-size: 25px;
+}
+
+.side-nav-design {
+  display: flex;
+  align-items: center;
+}
+
+.side-nav-design .billede-container {
+  display: none;
+}
+
+.open-nav {
+  display: none;
+  background: #205A79;
+  color: white;
+  padding: 30px;
+}
+
+.side-nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 840px) {
+  .normal-nav {
+    display: none;
+  }
+
+  .open-nav {
+    display: block;
+  }
+
+  .side-nav-design .billede-container {
+    display: block;
+  }
+}
+
+/*
+Responsiv index
+*********************************/
+
+@media screen and (max-width: 900px) {
+  .valueboxes {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .value {
+    margin-bottom: 10px;
+  }
+
+  .sfo-billede img {
+    display: none;
+  }
+
+  .hero-headline {
+    font-size: 22px;
+  }
+
+}
+
+/*
+Responsiv ansatte
+*********************************/
+@media screen and (max-width: 900px) {
+  .ansatte {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-height: 1366px) {
+  .ansatte {
+    margin-bottom: 200px;
+  }
+}
+
+/*
+Responsiv certificeret tilsynsførende
+*********************************/
+
+@media screen and (max-width: 900px) {
+  .certi-text p {
+    margin-right: 20%;
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  .certi-text {
+    margin-bottom: 300px;
+  }
+}
+
+@media screen and (min-height: 1366px) {
+  .certi-text {
+    margin-bottom: 600px;
+  }
+}
+
+/*
+Responsiv galleri
+*********************************/
+
+@media screen and (max-width: 815px) {
+  .galleri-container {
+    width: 90%;
+  }
+
+  .galleri-billeder {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .galleri-knapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .galleri-knapper button {
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 383px) {
+  .galleri-sektion img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .galleri-sektion .galleri-indhold {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  .galleri-sektion {
+    margin-bottom: 400px;
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  .galleri-sektion {
+    margin-bottom: 400px;
+  }
+}
+
+@media screen and (min-height: 1366px) {
+  .galleri-sektion {
+    margin-bottom: 650px;
+  }
+}
+
+/*
+Responsiv kontakt
+*********************************/
+@media screen and (max-width: 1200px) {
+  .kontakt-form form {
+    flex: 5;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .kontakt-form form input {
+    width: 50%;
+  }
+
+  .kontakt-form form textarea {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .kontakt-flex {
+    flex-direction: column;
+  }
+
+  .kontakt-form form input {
+    width: 60%;
+  }
+
+  .kontakt-form form textarea {
+    width: 80%;
+  }
+
+  .kontakt-beliggenhed {
+    margin-top: 20px;
+    width: 80%;
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  .kontakt-form {
+    margin-bottom: 300px;
+  }
+}
+
+@media screen and (min-height: 1366px) {
+  .kontakt-form {
+    margin-bottom: 550px;
+  }
 }

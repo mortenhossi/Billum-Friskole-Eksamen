@@ -205,10 +205,119 @@ function galleri() {
       image[3].setAttribute("src", this.src);
       image[3].classList.add("billedetest");
       modal.classList.add("galleriblock");
-      image[5].innerHTML = this.alt;
       image[1].onclick = function() {
       modal.classList.remove("galleriblock");
     }
     }
+  }
+}
+
+function galleriKategorier() {
+  var fastelavnBtn = document.querySelector(".fastelavn-knap");
+  var skoleteaterBtn = document.querySelector(".skoleteater-knap");
+  var uspBtn = document.querySelector(".usp-knap");
+  var galleriContainer = document.querySelector(".galleri-billeder");
+  var fastelavnPic = document.querySelector(".fastelavn-billeder");
+  var skoleteaterPic = document.querySelector(".skoleteater-billeder");
+  var uspPic = document.querySelector(".universe-science-park");
+
+  fastelavnBtn.onclick = function() {
+    if (fastelavnBtn.hasAttribute("style", "background-color: white;")) {
+      fastelavnBtn.removeAttribute("style", "background-color: white;");
+    }
+
+    skoleteaterBtn.removeAttribute("style", "background-color: white;");
+    uspBtn.removeAttribute("style", "background-color: white;");
+
+    if (fastelavnPic.style.display === "none") {
+      fastelavnPic.style.display = "inline";
+      galleriContainer.style.display = "block";
+      fastelavnBtn.setAttribute("style", "background-color: white;");
+      fastelavnBtn.classList.add("bluebutton");
+      skoleteaterBtn.classList.remove("bluebutton");
+      skoleteaterPic.style.display = "none";
+      uspBtn.classList.remove("bluebutton");
+      uspPic.style.display = "none";
+    } else {
+      fastelavnPic.style.display = "none";
+      galleriContainer.style.display = "none";
+      fastelavnBtn.removeAttribute("style", "background-color: white;");
+      fastelavnBtn.classList.remove("bluebutton");
+    }
+  }
+
+  skoleteaterBtn.onclick = function() {
+    if (skoleteaterBtn.hasAttribute("style", "background-color: white;")) {
+      skoleteaterBtn.removeAttribute("style", "background-color: white;");
+      fastelavnBtn.removeAttribute("style", "background-color: white;");
+      uspBtn.removeAttribute("style", "background-color: white;");
+    }
+
+    fastelavnBtn.removeAttribute("style", "background-color: white;");
+    uspBtn.removeAttribute("style", "background-color: white;");
+
+    if (skoleteaterPic.style.display === "none") {
+      skoleteaterPic.style.display = "inline";
+      galleriContainer.style.display = "block";
+      skoleteaterBtn.setAttribute("style", "background-color: white;");
+      skoleteaterBtn.classList.add("bluebutton");
+      fastelavnBtn.classList.remove("bluebutton");
+      fastelavnPic.style.display = "none";
+      uspBtn.classList.remove("bluebutton");
+      uspPic.style.display = "none";
+    } else {
+      skoleteaterPic.style.display = "none";
+      galleriContainer.style.display = "none";
+      skoleteaterBtn.removeAttribute("style", "background-color: white;");
+      skoleteaterBtn.classList.remove("bluebutton");
+      uspBtn.removeAttribute("style", "background-color: white;");
+      uspBtn.classList.remove("bluebutton");
+    }
+  }
+
+  uspBtn.onclick = function () {
+    if (uspBtn.hasAttribute("style", "background-color: white;")) {
+      uspBtn.removeAttribute("style", "background-color: white;");
+      fastelavnBtn.removeAttribute("style", "background-color: white;");
+      skoleteaterBtn.removeAttribute("style", "background-color: white;");
+    }
+
+    fastelavnBtn.removeAttribute("style", "background-color: white;");
+    skoleteaterBtn.removeAttribute("style", "background-color: white;");
+
+    if (uspPic.style.display === "none") {
+      uspPic.style.display = "inline";
+      galleriContainer.style.display = "block";
+      uspBtn.setAttribute("style", "background-color: white;");
+      uspBtn.classList.add("bluebutton");
+      fastelavnBtn.classList.remove("bluebutton");
+      fastelavnPic.style.display = "none";
+      skoleteaterBtn.classList.remove("bluebutton");
+      skoleteaterPic.style.display = "none";
+    } else {
+      uspPic.style.display = "none";
+      galleriContainer.style.display = "none";
+      uspBtn.removeAttribute("style", "background-color: white;");
+      uspBtn.classList.remove("bluebutton");
+    }
+  }
+}
+
+function navOpen() {
+  var sidenav = document.querySelector(".side-nav");
+  var openBtn = document.querySelector(".open-nav");
+  openBtn.onclick = function() {
+    sidenav.style.display = "block";
+    sidenav.style.width = "250px";
+  }
+
+}
+
+function navClose() {
+  var sidenav = document.querySelector(".side-nav");
+  var closeBtn = document.querySelector(".closebutton");
+  closeBtn.onclick = function() {
+    sidenav.style.display = "none";
+    sidenav.style.width = "0";
   }
 }

@@ -7,16 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
     <title>Billum Friskole | En friskole med fokus på tryghed, nærvær og fællesskab</title>
   </head>
-  <body>
+  <body onload="navOpen(); navClose();">
 
-    <nav>
+    <nav class="normal-nav">
       <div class="billede-container">
         <a href="index.html"><img src="assets/images/billumlogo.png" class="billumimg" alt="Billum Friskole logo"></a>
       </div>
 
       <div class="links-container">
+        <a href="index.html" class="dropbtn">Forside</a>
         <div class="dropdown">
           <button class="dropbtn">Om Friskolen</button>
             <div class="dropdown-content">
@@ -50,6 +52,34 @@
         <a href="tilmeld.html" class="dropbtn tilmeldbtn">Tilmeld</a>
       </div>
     </nav>
+
+      <div class="side-nav">
+          <a href="#" class="closebutton">&times;</a>
+          <a href="index.html">Forside</a>
+          <h3>Om Friskolen</h3>
+          <a href="omskolen.html">Om skolen</a>
+          <a href="sfoboernehave.html">SFO/Børnehave</a>
+          <a href="ansatte.html">Ansatte</a>
+          <h3>Praktisk</h3>
+          <a href="priser.html">Priser</a>
+          <a href="kalender.html">Kalender</a>
+          <a href="vaerdigrundlag.html">Værdigrundlag</a>
+          <a href="vedtaegter.html">Vedtægter</a>
+          <a href="certificeret.html">Certificeret tilsynsførende</a>
+          <h3>Nyheder</h3>
+          <a href="seneste.html">Seneste</a>
+          <a href="galleri.html">Galleri</a>
+          <a href="Kontakt.html">Kontakt</a>
+          <a href="tilmeld.html">Tilmeld</a>
+      </div>
+
+    <div class="side-nav-design">
+      <span class="open-nav">Menu</span>
+
+      <div class="billede-container">
+        <a href="index.html"><img src="assets/images/billumlogo.png" class="billumimg" alt="Billum Friskole logo"></a>
+      </div>
+    </div>
 
     <header>
       <div class="billede-overlay indexURL">
@@ -124,5 +154,6 @@
         <a href="https://www.facebook.com/billumfriskole/" class="fa fa-facebook-square" target="_blank"></a>
       </div>
     </footer>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
