@@ -884,7 +884,7 @@ Responsiv navigation
 
 .side-nav h3 {
   color: #BF4C2B;
-  padding: 8px 8px 8px 32px;
+  padding: 5px 5px 5px 32px;
   margin: 0;
   font-size: 25px;
 }
@@ -906,7 +906,7 @@ Responsiv navigation
 }
 
 .side-nav a {
-    padding: 8px 8px 8px 32px;
+    padding: 5px 5px 5px 32px;
     text-decoration: none;
     font-size: 16px;
     color: white;
@@ -1108,5 +1108,15 @@ Responsiv kontakt
 @media screen and (min-height: 1366px) {
   .kontakt-form {
     margin-bottom: 550px;
+  }
+}
+
+/*
+Responsiv kalender
+*********************************/
+
+@media screen and (min-height: 1366px) {
+  .kalenderfil {
+    margin-bottom: 200px;
   }
 }

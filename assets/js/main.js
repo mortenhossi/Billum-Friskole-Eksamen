@@ -174,8 +174,10 @@ function workingHours1() {
     var workinghours = document.querySelector(".info-aabningstider1")
     if (workinghours.style.display === "none") {
         workinghours.style.display = "block";
+        togglebtn.innerHTML = "-";
     } else {
         workinghours.style.display = "none";
+        togglebtn.innerHTML = "+";
     }
   }
 }
@@ -189,8 +191,10 @@ function workingHours2() {
     var workinghours = document.querySelector(".info-aabningstider2")
     if (workinghours.style.display === "none") {
         workinghours.style.display = "block";
+        togglebtn.innerHTML = "-";
     } else {
         workinghours.style.display = "none";
+        togglebtn.innerHTML = "+";
     }
   }
 }
