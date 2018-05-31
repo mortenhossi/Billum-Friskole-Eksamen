@@ -192,7 +192,6 @@ nav {
 
 .side-billede2 {
   width: 350px;
-  height: 300px;
   display: block;
 }
 
@@ -329,7 +328,6 @@ nav {
   .button {
   text-decoration: none;
   background: #BF4C2B;
-
   text-align: center;
   color: white;
   font-weight: bold;
@@ -1118,5 +1116,103 @@ Responsiv kalender
 @media screen and (min-height: 1366px) {
   .kalenderfil {
     margin-bottom: 200px;
+}
+
+/* Om skolen Responsiv
+*********************************/
+
+@media screen and (max-width: 750px) {
+  .side-billede {
+    display: none;
+  }
+  .flexbox p {
+    margin-right: 5%;
+  }
+  .orangetextbox {
+    margin-right: 5%;
+    text-align: center;
+  }
+  .ogp {
+    margin-left: 0;
+  }
+}
+
+/* Priser Responsiv
+*********************************/
+
+@media screen and (max-width: 750px) {
+
+}
+
+/* Seneste Responsiv
+*********************************/
+
+@media screen and (max-width: 750px) {
+  .nyheder-container {
+    flex-direction: column;
+  }
+  .marginclass {
+    margin: 15px;
+  }
+  .nyheder-box {
+    margin-bottom: 30px;
+  }
+  .seneste-information {
+    width: 80%;
+  }
+}
+
+/* SFO BH Responsiv
+*********************************/
+
+@media screen and (max-width: 750px) {
+  .containersfo {
+    flex-direction: column;
+  }
+  .side-billede2 {
+    width: 100%;
+  }
+  .sfobilleder {
+    margin: 20px;
+  }
+  .aabningstider {
+    margin-right: 20px;
+  }
+  .sfohave p {
+    margin-right: 0;
+  }
+  .margingone {
+    margin-top: 0;
+  }
+}
+
+/* Tilmeld Responsiv
+*********************************/
+
+@media screen and (max-width: 750px) {
+  .flexbutton {
+    flex-direction: column;
+  }
+  .flexmargin a {
+    display: initial;
+  }
+  .twobuttons {
+    margin-top: 20px;
+  }
+}
+
+/* Footer Responsiv
+*********************************/
+
+@media screen and (max-width: 750px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .intranet-footer {
+    margin: 5%;
+  }
+  .social-footer {
+    margin: 5%;
   }
 }
