@@ -189,7 +189,6 @@ nav {
   margin-right: 20px;
 }
 
-
 .side-billede2 {
   width: 350px;
   display: block;
@@ -490,14 +489,14 @@ input.button.submitbutton:focus {
   text-align: center;
 }
 
-.priser-sektion table {
-  margin: auto;
-  text-align: center;
+.flex-priser {
+  display: flex;
 }
 
-.priser-sektion table td, .priser-sektion table th {
-  padding: 10px 20px;
+.priser-ssb {
+  text-align: center;
   color: #BF4C2B;
+  flex: 1;
 }
 
 .priser-sektion a {
@@ -506,7 +505,6 @@ input.button.submitbutton:focus {
   margin-top: 20px;
   width: 10%;
 }
-
 
 /* NYHEDER STYLES
 ************************************* */
@@ -1154,6 +1152,7 @@ Responsiv kalender
   .side-billede {
     display: none;
   }
+
   .flexbox p {
     margin-right: 5%;
   }
@@ -1170,7 +1169,19 @@ Responsiv kalender
 *********************************/
 
 @media screen and (max-width: 750px) {
+  .flex-priser {
+    flex-direction: column;
+  }
+  .priser-sektion {
+    margin: 0px 5px 0px 5px;
+  }
 
+  .margintexttop {
+    margin-top: 10px
+  }
+  .priser-sektion a {
+    width: 20%;
+  }
 }
 
 /* Seneste Responsiv
@@ -1206,6 +1217,7 @@ Responsiv kalender
   }
   .sfobilleder {
     margin: 20px;
+    order: 1;
   }
   .aabningstider {
     margin-right: 20px;
