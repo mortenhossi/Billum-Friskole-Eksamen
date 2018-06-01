@@ -189,7 +189,6 @@ nav {
   margin-right: 20px;
 }
 
-
 .side-billede2 {
   width: 350px;
   display: block;
@@ -490,14 +489,14 @@ input.button.submitbutton:focus {
   text-align: center;
 }
 
-.priser-sektion table {
-  margin: auto;
-  text-align: center;
+.flex-priser {
+  display: flex;
 }
 
-.priser-sektion table td, .priser-sektion table th {
-  padding: 10px 20px;
+.priser-ssb {
+  text-align: center;
   color: #BF4C2B;
+  flex: 1;
 }
 
 .priser-sektion a {
@@ -506,7 +505,6 @@ input.button.submitbutton:focus {
   margin-top: 20px;
   width: 10%;
 }
-
 
 /* NYHEDER STYLES
 ************************************* */
@@ -894,6 +892,7 @@ Responsiv navigation
 
 .side-nav-design .billede-container {
   display: none;
+  margin: auto;
 }
 
 .open-nav {
@@ -943,6 +942,21 @@ Responsiv navigation
   }
 }
 
+@media screen and (max-height: 630px) {
+  .side-nav a {
+    font-size: 14px;
+  }
+
+  .side-nav h3 {
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .billumimg {
+    height: 40px;
+  }
+}
+
 /*
 Responsiv index
 *********************************/
@@ -979,6 +993,17 @@ Responsiv ansatte
 @media screen and (min-height: 1366px) {
   .ansatte {
     margin-bottom: 200px;
+  }
+}
+
+@media screen and (max-height: 568px) {
+  .modal {
+    padding-top: 70px;
+  }
+
+  .picinfo {
+    width: 90%;
+    font-size: 12px;
   }
 }
 
@@ -1070,7 +1095,7 @@ Responsiv kontakt
 
 @media screen and (max-width: 900px) {
   .kontakt-form form input {
-    width: 50%;
+    width: 60%;
   }
 
   .kontakt-form form textarea {
@@ -1084,11 +1109,11 @@ Responsiv kontakt
   }
 
   .kontakt-form form input {
-    width: 60%;
+    width: 100%;
   }
 
   .kontakt-form form textarea {
-    width: 80%;
+    width: 100%;
   }
 
   .kontakt-beliggenhed {
@@ -1116,6 +1141,7 @@ Responsiv kalender
 @media screen and (min-height: 1366px) {
   .kalenderfil {
     margin-bottom: 200px;
+  }
 }
 
 /* Om skolen Responsiv
@@ -1125,6 +1151,7 @@ Responsiv kalender
   .side-billede {
     display: none;
   }
+
   .flexbox p {
     margin-right: 5%;
   }
@@ -1141,7 +1168,19 @@ Responsiv kalender
 *********************************/
 
 @media screen and (max-width: 750px) {
+  .flex-priser {
+    flex-direction: column;
+  }
+  .priser-sektion {
+    margin: 0px 5px 0px 5px;
+  }
 
+  .margintexttop {
+    margin-top: 10px
+  }
+  .priser-sektion a {
+    width: 20%;
+  }
 }
 
 /* Seneste Responsiv
@@ -1160,6 +1199,9 @@ Responsiv kalender
   .seneste-information {
     width: 80%;
   }
+  .seneste-information p {
+    font-size: 12px;
+  }
 }
 
 /* SFO BH Responsiv
@@ -1170,16 +1212,17 @@ Responsiv kalender
     flex-direction: column;
   }
   .side-billede2 {
-    width: 100%;
+    display: none;
   }
   .sfobilleder {
     margin: 20px;
+    order: 1;
   }
   .aabningstider {
     margin-right: 20px;
   }
   .sfohave p {
-    margin-right: 0;
+    margin-right: 20px;
   }
   .margingone {
     margin-top: 0;
