@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
     <title>Billum Friskole | En friskole med fokus på tryghed, nærvær og fællesskab</title>
   </head>
-  <body onload="navOpen(); navClose();">
+  <body onload="navOpen(); navClose(); slideShow()">
 
     <nav class="normal-nav">
       <div class="billede-container">
@@ -81,8 +81,20 @@
       </div>
     </div>
 
-    <header>
-      <div class="billede-overlay indexURL">
+    <header class="slideshow-container">
+      <div class="slides fade">
+        <img src="assets/images/indexBillede.png" alt="Slideshow billede 1" class="slideshow-billeder">
+      </div>
+
+      <div class="slides fade">
+        <img src="assets/images/omskolen.png" alt="Slideshow billede 1" class="slideshow-billeder">
+      </div>
+
+      <div class="slides fade">
+        <img src="assets/images/certificeret.png" alt="Slideshow billede 1" class="slideshow-billeder">
+      </div>
+
+      <div class="headline">
         <h1 class="hero-headline">Velkommen til Billum Friskole!</h1>
       </div>
     </header>
@@ -115,7 +127,9 @@
           <div class="sfo-information">
             <h2>SFO</h2>
             <p>På Billum Friskole har dit barn også mulighed for at komme i SFO. Dit barn vil få alle muligheder for at kunne udfolde sine kreative idéer. I SFO'en bliver naturen inddraget, der vil blive leget i idrætshallen samt en masse indendørs aktiviteter.</p>
-            <a href="sfoboernehave.html" class="button">Læs om SFO</a>
+            <div class="index-button">
+              <a href="sfoboernehave.html" class="button">Læs om SFO</a>
+            </div>
           </div>
 
           <div class="sfo-billede">
@@ -127,7 +141,9 @@
           <div class="sfo-information">
             <h2>Børnehave</h2>
             <p>Har dit barn brug for en børnehave? Til sommer 2018 starter Billum Friskole op. Børnehaven ligger lige ved siden af friskolen og SFO’en. Her vil dit barn have rig mulighed for at lege ude i naturen som børn burde.</p>
-            <a href="sfoboernehave.html" class="button">Læs om børnehave</a>
+            <div class="index-button">
+              <a href="sfoboernehave.html" class="button">Læs om børnehave</a>
+            </div>
           </div>
 
           <div class="sfo-billede">

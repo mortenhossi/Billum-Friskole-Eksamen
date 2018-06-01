@@ -491,12 +491,13 @@ input.button.submitbutton:focus {
 
 .flex-priser {
   display: flex;
+  justify-content: center;
 }
 
 .priser-ssb {
   text-align: center;
   color: #BF4C2B;
-  flex: 1;
+  margin: 20px;
 }
 
 .priser-sektion a {
@@ -710,12 +711,15 @@ input.button.submitbutton:focus {
 .vaerdier-sektion ul {
     background-color: #BF4C2B;
     width: 80%;
-    margin-left: 20px;
 }
 
 .vaerdier-sektion li {
   padding: 10px;
   color: white;
+}
+
+.vaerdigrundlag-container {
+  margin-left: 20px;
 }
 
 /* VEDTÆGTER STYLES
@@ -755,9 +759,34 @@ footer {
 
 /* INDEX STYLES
 ************************************* */
-.indexURL {
+/*.indexURL {
   background-image: url("../../assets/images/indexBillede.png");
+}*/
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
 }
+
+.slides {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+.slideshow-billeder {
+  height: 22.3vw;
+  width: 100%;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 
 .friskolentext {
   text-align: center;
@@ -806,7 +835,6 @@ footer {
 
 .tekstsfobh {
   display: flex;
-  align-items: flex-start;
   margin-top: 30px;
 }
 
@@ -979,7 +1007,19 @@ Responsiv index
   .hero-headline {
     font-size: 22px;
   }
+}
 
+@media screen and (max-width: 700px) {
+  .sfo-information h2, .sfo-information p {
+    text-align: center;
+    width: 100%;
+  }
+
+  .index-button {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
 }
 
 /*
