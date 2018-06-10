@@ -901,14 +901,14 @@ Responsiv navigation
     top: 0;
     left: 0;
     background-color: #205A79;
-    overflow-x: scroll;
-    padding-top: 60px;
+    overflow-y: scroll;
+    padding-top: 15px;
     transition: 0.5s;
 }
 
 .side-nav h3 {
   color: #BF4C2B;
-  padding: 5px 5px 5px 32px;
+  padding: 1px 5px 1px 32px;
   margin: 0;
   font-size: 25px;
 }
@@ -1005,7 +1005,7 @@ Responsiv index
   }
 
   .hero-headline {
-    font-size: 22px;
+    font-size: 16px;
   }
 }
 
